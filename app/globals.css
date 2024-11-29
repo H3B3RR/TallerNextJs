@@ -1,21 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* globals.css */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --pastel-blue: #a8d5e2;
+  --pastel-green: #b8e2a8;
+  --pastel-pink: #e2a8d5;
+  --pastel-yellow: #e2d5a8;
+  --pastel-purple: #d5a8e2;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto);
+  background-color: var(--pastel-blue);
+  color: #333;
+}
+
+.card {
+  background-color: var(--pastel-green);
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.sidebar {
+  background-color: var(--pastel-purple);
+  color: white;
+}
+
+button {
+  background-color: var(--pastel-pink);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: var(--pastel-yellow);
 }
